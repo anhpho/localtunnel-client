@@ -36,9 +36,9 @@ lt --port 8000
 
 ```
 // Http use
-lt --host [host your own server with port] --port [required: port local app] --open
+lt --host [host your own server with port, Ex: http://abc.com:2345] --port [required: port local app] --open
 // Https use
-lt --host [host your own server with port] --port [required: port local app] --open --local-https --allow-invalid-cert
+lt --host [host your own server with server port, Ex: http://abc.com:2345] --port [required: port local app] --open --local-https --allow-invalid-cert
 ```
 
 Thats it! It will connect to the tunnel server, setup the tunnel, and tell you what url to use for your testing. This url will remain active for the duration of your session; so feel free to share it with others for happy fun time!
