@@ -32,6 +32,15 @@ When localtunnel is installed globally, just use the `lt` command to start the t
 lt --port 8000
 ```
 
+**Forker note**:
+
+```
+// Http use
+lt --host [host your own server with port] --port [required: port local app] --open
+// Https use
+lt --host [host your own server with port] --port [required: port local app] --open --local-https --allow-invalid-cert
+```
+
 Thats it! It will connect to the tunnel server, setup the tunnel, and tell you what url to use for your testing. This url will remain active for the duration of your session; so feel free to share it with others for happy fun time!
 
 You can restart your local server all you want, `lt` is smart enough to detect this and reconnect once it is back.
